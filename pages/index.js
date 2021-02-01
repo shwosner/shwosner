@@ -1,20 +1,21 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
+import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
+import Projects from "../components/Projects";
+import About from "../components/About";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Shimon Wosner</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <Navbar title="Shimon Wosner" />
+      <div style={{ display: "grid", gap: "30px" }}>
+        <About />
 
-      <main className={styles.main}>
-        <h1>Hi, I'm Shimon</h1>
-        <h3>Welcome to my portfolio</h3>
-      </main>
+        <Projects />
 
-      <footer className={styles.footer}></footer>
+        <Contact />
+      </div>
+      {/* <footer className={styles.footer}>this is the footer</footer> */}
     </div>
   );
 }

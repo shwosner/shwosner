@@ -4,13 +4,71 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background: #efefef;
+}
+html {
+  height: -webkit-fill-available;
 }
 
 a {
-  color: inherit;
+  color: teal;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+  color: teal;
+}
+
+.about-button {
+  width: 100%;
+  height: 40px;
+  font-size: 19px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.about-button:hover {
+  background: #009e9e;
+}
+.about-button:focus {
+  border: none;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 17vw 1fr;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.download-button {
+  border: none;
+  height: 35px;
+  width: 130px;
+  cursor: pointer;
+  outline: none;
+}
+.download-button:hover {
+  background: #eef7f7;
 }
