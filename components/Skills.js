@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledList = styled.ul`
   margin-top: 5px;
   list-style-type: circle;
+  padding-left: 26px;
 `;
 
 const SectionSC = styled.section`
@@ -28,25 +29,31 @@ export default function Skills() {
 
       <ListsContainer>
         <div>
-          <h3 style={{ marginBottom: 0 }}>Back-end</h3>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
+            Back-end
+          </h3>
           <StyledList>
             <li>NodeJS</li>
             <li>Express</li>
             <li>REST API</li>
-            <li>GraphQL</li>
+            <li>GraphQL/Apollo</li>
             <li>Mongoose</li>
             <li>NextJS</li>
           </StyledList>
         </div>
         <div>
-          <h3 style={{ marginBottom: 0 }}>Front-end</h3>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
+            Front-end
+          </h3>
           <StyledList>
             <li>HTML, CSS, JS</li>
             <li>React</li>
           </StyledList>
         </div>
         <div>
-          <h3 style={{ marginBottom: 0 }}>Databases</h3>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
+            Databases
+          </h3>
           <StyledList>
             <li>MongoDB</li>
             <li>SQL</li>
@@ -54,7 +61,7 @@ export default function Skills() {
           </StyledList>
         </div>
         <div>
-          <h3 style={{ marginBottom: 0 }}>APIs</h3>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>APIs</h3>
           <StyledList>
             <li>Stripe</li>
             <li>Slack</li>
@@ -64,7 +71,9 @@ export default function Skills() {
           </StyledList>
         </div>
         <div>
-          <h3 style={{ marginBottom: 0 }}>Version control</h3>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
+            Version control
+          </h3>
           <StyledList>
             <li>GitHub</li>
             <li>GitLab</li>
@@ -72,7 +81,9 @@ export default function Skills() {
           </StyledList>
         </div>
         <div>
-          <h3 style={{ marginBottom: 0 }}>Design</h3>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
+            Design
+          </h3>
           <StyledList>
             <li>Figma</li>
             <li>UX/UI</li>

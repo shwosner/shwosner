@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -43,7 +43,15 @@ export default function Home() {
 
         <Contact />
       </div>
-      <footer style={{ padding: "10px", background: "teal" }}>
+      <footer
+        style={{
+          // padding: "10px",
+          padding: "15px 20px 10px 20px",
+          background: "teal",
+          display: "grid",
+          gridTemplateColumns: "1fr 100px",
+        }}
+      >
         <a
           href="https://github.com/shwosner/shwosner"
           target="_blank"
@@ -51,6 +59,36 @@ export default function Home() {
         >
           <FaGithub /> Source code
         </a>
+        <div
+          style={{
+            justifySelf: "end",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gap: "10px",
+          }}
+        >
+          <a
+            href="https://github.com/shwosner"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shimon-wosner"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://twitter.com/shwosner"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            <FaTwitter />
+          </a>
+        </div>
       </footer>
     </div>
   );

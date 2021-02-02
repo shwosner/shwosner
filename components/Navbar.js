@@ -5,6 +5,7 @@ import { Divide as Hamburger } from "hamburger-react";
 import { useState } from "react";
 
 const StyledNavbar = styled.nav`
+  z-index: 10;
   background: teal;
   padding: 10px;
   padding-left: 20px;
@@ -69,7 +70,7 @@ export default function Navbar({ title }) {
         <StledItems isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
           <Link href="#">
             <a>
-              <b>About</b>
+              <b>Home</b>
             </a>
           </Link>
           <Link href="#skills">

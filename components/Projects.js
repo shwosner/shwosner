@@ -1,15 +1,27 @@
 import styled from "styled-components";
 import ProjectDirshuAccess from "./ProjectDirshuAccess";
+import ProjectDirshuSiyum from "./ProjectDirshuSiyum";
 import ProjectRandomChat from "./ProjectRandomChat";
 const ProjectsGrid = styled.div`
+  margin-left: 5vw;
+  width: 90vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(3, max-content);
+  gap: 40px;
   justify-items: center;
   align-items: center;
   margin-bottom: 20px;
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, max-content);
+  }
+  @media only screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    border: 1px solid white !important;
+    border-radius: 3px;
+    cursor: pointer;
   }
 `;
 
@@ -30,6 +42,7 @@ export default function Projects() {
       <ProjectsGrid>
         <ProjectRandomChat />
         <ProjectDirshuAccess />
+        <ProjectDirshuSiyum />
       </ProjectsGrid>
     </section>
     // </SimpleReactLightbox>
