@@ -18,7 +18,7 @@ const StyledHeading = styled.h1`
   color: white;
   padding: 9px;
   /* height: 45px; */
-  width: 40vw;
+  width: 90vw;
   margin-left: 5vw;
   margin-top: 50px;
 `;

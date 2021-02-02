@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
+import { Divide as Hamburger } from "hamburger-react";
+import { useState } from "react";
 
 const StyledNavbar = styled.nav`
   background: teal;
@@ -12,14 +14,24 @@ const StyledNavbar = styled.nav`
   grid-template-columns: 450px 1fr;
   gap: 10px;
   align-items: center;
-  b {
+  b,
+  .hamburger-react {
     color: white;
   }
-  b:hover {
+  b:hover,
+  .hamburger-react:hover {
     color: #deffff;
   }
+  .hamburger-react {
+    display: none;
+  }
   @media only screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: ${({ isOpen }) =>
+      isOpen ? "50px 1fr 1fr" : "50px 1fr"};
+    align-items: ${({ isOpen }) => (isOpen ? "start" : "center")};
+    .hamburger-react {
+      display: unset;
+    }
   }
 `;
 const DownloadButton = styled.button`
@@ -33,7 +45,18 @@ const DownloadButton = styled.button`
     background: #eef7f7;
   }
 `;
+
+const StledItems = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+    display: ${({ isOpen }) => (isOpen ? "grid" : "none")};
+  }
+`;
+
 export default function Navbar({ title }) {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -41,13 +64,9 @@ export default function Navbar({ title }) {
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <link rel="icon" href="/shimon.svg" />
       </Head>
-      <StyledNavbar>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
+      <StyledNavbar isOpen={isOpen}>
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+        <StledItems isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
           <Link href="#">
             <a>
               <b>About</b>
@@ -68,7 +87,7 @@ export default function Navbar({ title }) {
               <b>Contact me</b>
             </a>
           </Link>
-        </div>
+        </StledItems>
         <a style={{ justifySelf: "end" }} href="/shimon.jpg" download>
           <DownloadButton>
             <h3

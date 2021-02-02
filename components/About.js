@@ -60,8 +60,8 @@ export default function About() {
             Welcome to my web development portfolio
           </h3>
           <p style={{ lineHeight: "20px" }}>
-            I specialise in CRUD web applications, <br /> Working with the
-            latest technologies and development tools.
+            I specialise in CRUD web applications with responsive modern design,{" "}
+            <br /> Working with the latest technologies and development tools.
           </p>
           <Link href="#contact">
             <StyledButton>Contact me</StyledButton>
