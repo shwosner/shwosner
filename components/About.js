@@ -25,7 +25,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div style={{ padding: 40 }}>
+    <div id="#" style={{ padding: 40 }}>
       <div className="about-grid">
         <img
           style={{

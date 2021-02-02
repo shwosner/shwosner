@@ -8,14 +8,21 @@ export default function Home() {
   return (
     <div>
       <Navbar title="Shimon Wosner" />
-      <div style={{ display: "grid", gap: "30px" }}>
+      <div
+        style={
+          {
+            // display: "grid", gap: "30px"
+          }
+        }
+      >
         <About />
-
+        <div style={{ border: "4px solid white" }} />
         <Projects />
+        <div style={{ border: "4px solid white" }} />
 
         <Contact />
       </div>
-      {/* <footer className={styles.footer}>this is the footer</footer> */}
+      <footer style={{ height: "50px", background: "teal" }} />
     </div>
   );
 }

@@ -8,18 +8,7 @@ export default function Navbar({ title }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav
-        style={{
-          background: "white",
-          padding: "10px",
-          paddingLeft: 20,
-          position: "sticky",
-          top: 0,
-          display: "grid",
-          gridTemplateColumns: "250px 1fr",
-          alignItems: "center",
-        }}
-      >
+      <nav>
         <div
           style={{
             display: "flex",
@@ -30,19 +19,39 @@ export default function Navbar({ title }) {
             //   width: 100%;
           }}
         >
-          <Link href="/">
-            <a>About</a>
+          <Link href="#">
+            <a>
+              <b>About</b>
+            </a>
+          </Link>
+          <Link href="#technology">
+            <a>
+              <b>Technology</b>
+            </a>
           </Link>
           <Link href="#projects">
-            <a>Projects</a>
+            <a>
+              <b>Projects</b>
+            </a>
           </Link>
           <Link href="#contact">
-            <a>Contact me</a>
+            <a>
+              <b>Contact me</b>
+            </a>
           </Link>
         </div>
         <a style={{ justifySelf: "end" }} href="/shimon.jpg" download>
           <button className="download-button">
-            <b style={{ marginRight: "10px", fontSize: "15px" }}>Resume</b>
+            <b
+              style={{
+                display: "inline-block",
+                marginRight: "10px",
+                fontSize: "15px",
+                paddingBottom: "4px",
+              }}
+            >
+              Resume
+            </b>
             <img src="/download.svg" width="16px" alt="download" />
           </button>
         </a>
