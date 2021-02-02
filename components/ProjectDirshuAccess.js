@@ -4,9 +4,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 export default function ProjectDirshuAccess() {
   return (
     <div style={{ background: "white", padding: "10px", width: "min-content" }}>
-      <h3 style={{ textAlign: "center", margin: "5px" }}>
-        Dirshu UK (MS Access)
-      </h3>
+      <h3 style={{ textAlign: "center", margin: "5px" }}>Dirshu UK</h3>
 
       <SRLWrapper>
         <img
@@ -22,6 +20,7 @@ export default function ProjectDirshuAccess() {
           height="200px"
         />
       </SRLWrapper>
+      <p style={{ marginTop: 0 }}>MS Access / SQL / VBA</p>
     </div>
   );
 }

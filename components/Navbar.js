@@ -1,22 +1,51 @@
 import Head from "next/head";
 import Link from "next/link";
+import styled from "styled-components";
 
+const StyledNavbar = styled.nav`
+  background: teal;
+  padding: 10px;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 10px;
+  align-items: center;
+  b {
+    color: white;
+  }
+  b:hover {
+    color: #deffff;
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+`;
+const DownloadButton = styled.button`
+  border: none;
+  height: 35px;
+  width: 130px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+  :hover {
+    background: #eef7f7;
+  }
+`;
 export default function Navbar({ title }) {
   return (
     <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/shimon.svg" />
       </Head>
-      <nav>
+      <StyledNavbar>
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
-            // gridTemplateColumns: "repeat(4,max-content)",
-            // gap: "20px",
-
-            //   width: 100%;
           }}
         >
           <Link href="#">
@@ -24,9 +53,9 @@ export default function Navbar({ title }) {
               <b>About</b>
             </a>
           </Link>
-          <Link href="#technology">
+          <Link href="#skills">
             <a>
-              <b>Technology</b>
+              <b>Technical skills</b>
             </a>
           </Link>
           <Link href="#projects">
@@ -41,21 +70,16 @@ export default function Navbar({ title }) {
           </Link>
         </div>
         <a style={{ justifySelf: "end" }} href="/shimon.jpg" download>
-          <button className="download-button">
-            <b
-              style={{
-                display: "inline-block",
-                marginRight: "10px",
-                fontSize: "15px",
-                paddingBottom: "4px",
-              }}
+          <DownloadButton>
+            <h3
+              style={{ margin: 0, marginRight: "3px", display: "inline-block" }}
             >
               Resume
-            </b>
+            </h3>
             <img src="/download.svg" width="16px" alt="download" />
-          </button>
+          </DownloadButton>
         </a>
-      </nav>
+      </StyledNavbar>
     </>
   );
 }

@@ -1,28 +1,36 @@
+import styled from "styled-components";
 import ProjectDirshuAccess from "./ProjectDirshuAccess";
 import ProjectRandomChat from "./ProjectRandomChat";
-// import SimpleReactLightbox from "simple-react-lightbox";
+const ProjectsGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 830px) {
+    grid-template-columns: 1fr;
+  }
+`;
 
+const StyledHeading = styled.h1`
+  background: teal;
+  color: white;
+  padding: 9px;
+  /* height: 45px; */
+  width: 40vw;
+  margin-left: 5vw;
+  margin-top: 50px;
+`;
 export default function Projects() {
   return (
     // <SimpleReactLightbox>
     <section id="projects">
-      <h1 style={{ textAlign: "center" }}>{"<Projects />"}</h1>
-      <div
-        className="projects_grid"
-        // style={{
-        //   display: "grid",
-        //   // gridTemplateColumns: "auto auto",
-        //   gridTemplateColumns: "1fr 1fr",
-        //   gap: "30px",
-        //   // display: "flex",
-        //   // justifyContent: "space-around",
-        //   justifyItems: "center",
-        //   alignItems: "center",
-        // }}
-      >
+      <StyledHeading>{"<Projects />"}</StyledHeading>
+      <ProjectsGrid>
         <ProjectRandomChat />
         <ProjectDirshuAccess />
-      </div>
+      </ProjectsGrid>
     </section>
     // </SimpleReactLightbox>
   );

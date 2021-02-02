@@ -26,6 +26,10 @@ export default function ProjectRandomChat({ title }) {
           height="400px"
         />
       </SRLWrapper>
+      <p style={{ marginTop: 0 }}>
+        React (with Chakra-ui) / Supabase (PostgreSQL)
+      </p>
+
       <div
         style={{
           display: "flex",
