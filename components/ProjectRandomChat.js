@@ -2,37 +2,33 @@ import Image from "next/image";
 import React from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { SRLWrapper } from "simple-react-lightbox";
+import { ProjectCard } from "./ProjectCard";
 
 export default function ProjectRandomChat() {
   return (
-    <div
-      style={{
-        background: "#efefef",
-        width: "270px",
-      }}
-    >
-      <h3
-        style={{
-          textAlign: "center",
-          margin: 0,
-          background: "#cfdfdf",
-          padding: "12px",
-        }}
-      >
-        Random Chat
-      </h3>
+    <ProjectCard>
+      <h3>Random Chat</h3>
       <div style={{ padding: "15px" }}>
         <SRLWrapper>
           <Image
             className="project-image"
-            src="/randum-chat.PNG"
+            src="/random-chat.png"
             alt="Randum chat app"
-            height={400}
-            width={300}
+            height={200}
+            width={400}
           />
         </SRLWrapper>
         <p style={{ margin: 0, marginTop: "10px" }}>
-          React (with Chakra-ui) / Supabase (PostgreSQL)
+          React (with{" "}
+          <a href="https://twitter.com/chakra_ui" target="_blank">
+            @chakra_ui
+          </a>
+          ) <br />
+          Data:{" "}
+          <a href="https://twitter.com/supabase_io" target="_blank">
+            @supabase_io
+          </a>{" "}
+          (On top of PostgreSQL)
         </p>
         <div
           style={{
@@ -52,6 +48,6 @@ export default function ProjectRandomChat() {
           </a>
         </div>
       </div>
-    </div>
+    </ProjectCard>
   );
 }

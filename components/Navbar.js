@@ -50,6 +50,7 @@ const DownloadButton = styled.button`
 const StledItems = styled.div`
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   @media only screen and (max-width: 600px) {
     display: ${({ isOpen }) => (isOpen ? "grid" : "none")};
   }

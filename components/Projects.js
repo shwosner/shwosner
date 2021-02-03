@@ -2,21 +2,17 @@ import styled from "styled-components";
 import ProjectDirshuAccess from "./ProjectDirshuAccess";
 import ProjectDirshuSiyum from "./ProjectDirshuSiyum";
 import ProjectRandomChat from "./ProjectRandomChat";
+import ProjectExpressSSE from "./ProjectExpressSSE";
 const ProjectsGrid = styled.div`
   margin-left: 5vw;
   width: 90vw;
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(auto-fill, 420px);
   gap: 40px;
+  justify-content: center;
   justify-items: center;
   align-items: center;
   margin-bottom: 20px;
-  @media only screen and (max-width: 1200px) {
-    grid-template-columns: repeat(2, max-content);
-  }
-  @media only screen and (max-width: 1000px) {
-    grid-template-columns: 1fr;
-  }
 
   .project-image {
     border: 1px solid white !important;
@@ -41,6 +37,7 @@ export default function Projects() {
       <StyledHeading>{"<Projects />"}</StyledHeading>
       <ProjectsGrid>
         <ProjectRandomChat />
+        <ProjectExpressSSE />
         <ProjectDirshuAccess />
         <ProjectDirshuSiyum />
       </ProjectsGrid>

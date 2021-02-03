@@ -75,7 +75,7 @@ export default function Home() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/shimon-wosner"
+            href="https://www.linkedin.com/in/shimon-wosner-b8612985/"
             target="_blank"
             style={{ color: "white" }}
           >
