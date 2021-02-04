@@ -52,7 +52,7 @@ export default function About() {
           }}
           alt="shimon"
           height="170px"
-          src="/shimon.jpg"
+          src="/shimon_compressed.jpg"
         />
         <div style={{ justifySelf: "center" }}>
           <h1>Hi, I'm Shimon</h1>
