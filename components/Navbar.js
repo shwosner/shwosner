@@ -90,7 +90,11 @@ export default function Navbar({ title }) {
             </a>
           </Link>
         </StledItems>
-        <a style={{ justifySelf: "end" }} href="/shimon.jpg" download>
+        <a
+          style={{ justifySelf: "end" }}
+          href="/Shimon_Wosner_Resume.pdf"
+          download
+        >
           <DownloadButton>
             <h3
               style={{ margin: 0, marginRight: "3px", display: "inline-block" }}
