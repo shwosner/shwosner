@@ -6,12 +6,12 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Head>
         <meta property="og:title" content="Shimon Wosner" />
-        <meta property="og:description" content="Shimomn's web dev porfolio" />
-        <meta property="og:image" content="http://shimon-wosner.vercel.app/" />
+        <meta property="og:description" content="Web dev porfolio." />
         <meta
-          property="og:url"
-          content="http://shimon-wosner.vercel.app/shimon_compressed.jpg"
+          property="og:image"
+          content="http://shimon-wosner.vercel.app/shimon-wosner.vercel.app_.png"
         />
+        <meta property="og:url" content="http://shimon-wosner.vercel.app" />
       </Head>
       <SimpleReactLightbox>
         <Component {...pageProps} />
