@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
           name="twitter:image"
           content="http://shimon-wosner.vercel.app/shimon-wosner.vercel.app_.png"
         />
-        <meta name="twitter:url" content="http://shimon-wosner.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <SimpleReactLightbox>
