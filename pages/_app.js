@@ -12,7 +12,14 @@ function MyApp({ Component, pageProps }) {
           content="http://shimon-wosner.vercel.app/shimon-wosner.vercel.app_.png"
         />
         <meta property="og:url" content="http://shimon-wosner.vercel.app" />
+        <meta name="twitter:title" content="Shimon Wosner" />
+        <meta name="twitter:description" content="Web dev porfolio." />
+        <meta
+          name="twitter:image"
+          content="http://shimon-wosner.vercel.app/shimon-wosner.vercel.app_.png"
+        />
       </Head>
+
       <SimpleReactLightbox>
         <Component {...pageProps} />
       </SimpleReactLightbox>
