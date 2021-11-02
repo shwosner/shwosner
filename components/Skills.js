@@ -38,7 +38,10 @@ export default function Skills() {
             <li>REST API</li>
             <li>GraphQL/Apollo</li>
             <li>Mongoose</li>
-            <li>NextJS</li>
+            <li>Prisma</li>
+            <li>Next</li>
+            <li>Nuxt</li>
+            <li>Vite</li>
           </StyledList>
         </div>
         <div>
@@ -48,6 +51,8 @@ export default function Skills() {
           <StyledList>
             <li>HTML, CSS, JS</li>
             <li>React</li>
+            <li>Vue</li>
+            <li>Svelte</li>
           </StyledList>
         </div>
         <div>
@@ -56,18 +61,10 @@ export default function Skills() {
           </h3>
           <StyledList>
             <li>MongoDB</li>
-            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Supabase</li>
             <li>Firebase</li>
-          </StyledList>
-        </div>
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>APIs</h3>
-          <StyledList>
-            <li>Stripe</li>
-            <li>Slack</li>
-            <li>Postmark</li>
-            <li>Mailgun</li>
-            <li>Connectwise</li>
           </StyledList>
         </div>
         <div>
@@ -78,6 +75,27 @@ export default function Skills() {
             <li>GitHub</li>
             <li>GitLab</li>
             <li>Bitbucket</li>
+          </StyledList>
+        </div>
+        <div>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
+            Deployment
+          </h3>
+          <StyledList>
+            <li>Heroku</li>
+            <li>Vercel</li>
+            <li>Netlify</li>
+          </StyledList>
+        </div>
+        <div>
+          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>APIs</h3>
+          <StyledList>
+            <li>Stripe</li>
+            <li>Slack</li>
+            <li>Postmark</li>
+            <li>Mailgun</li>
+            <li>Connectwise</li>
+            <li>And more...</li>
           </StyledList>
         </div>
         <div>

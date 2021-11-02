@@ -90,7 +90,7 @@ export default function Navbar({ title }) {
             </a>
           </Link>
         </StledItems>
-        <a
+        {/* <a
           style={{ justifySelf: "end" }}
           href="/Shimon_Wosner_Resume.pdf"
           download
@@ -103,7 +103,7 @@ export default function Navbar({ title }) {
             </h3>
             <img src="/download.svg" width="16px" alt="download" />
           </DownloadButton>
-        </a>
+        </a> */}
       </StyledNavbar>
     </>
   );

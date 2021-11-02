@@ -14,12 +14,12 @@ export default function ProjectRandomChat() {
             className="project-image"
             src="/random-chat.png"
             alt="Randum chat app"
-            height={200}
-            width={400}
+            height={170}
+            width={250}
           />
         </SRLWrapper>
         <p style={{ margin: 0, marginTop: "10px" }}>
-          React (with{" "}
+          React, Vite (with{" "}
           <a href="https://twitter.com/chakra_ui" target="_blank">
             @chakra_ui
           </a>
