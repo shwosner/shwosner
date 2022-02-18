@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section id="contact" style={{ background: "#efefef" }}>
-      <div style={{ width: "300px" }}>
+      <div style={{ minWidth: "300px" }}>
         <div
           style={{
             lineHeight: "23px",
