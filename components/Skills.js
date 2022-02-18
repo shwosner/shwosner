@@ -14,9 +14,17 @@ const SectionSC = styled.section`
 const ListsContainer = styled.div`
   padding: 20px;
   padding-left: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   /* justify-items: center; */
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  @media (max-width: 1070px) {
+    // flex-direction: column;
+    // gap: 50px;
+    display: block;
+  }
 `;
 export default function Skills() {
   return (
@@ -85,9 +93,10 @@ export default function Skills() {
             <li>Heroku</li>
             <li>Vercel</li>
             <li>Netlify</li>
+            <li>Some exp. in AWS GCP and Azure</li>
           </StyledList>
         </div>
-        <div>
+        {/* <div>
           <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>APIs</h3>
           <StyledList>
             <li>Stripe</li>
@@ -97,7 +106,7 @@ export default function Skills() {
             <li>Connectwise</li>
             <li>And more...</li>
           </StyledList>
-        </div>
+        </div> */}
         <div>
           <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
             Design
