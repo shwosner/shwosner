@@ -24,11 +24,12 @@ const ProjectsGrid = styled.div`
 const StyledHeading = styled.h1`
   background: teal;
   color: white;
-  padding: 9px;
+  padding: 20px;
   /* height: 45px; */
-  width: 90vw;
-  margin-left: 5vw;
+  width: 100vw;
+  /* margin-left: 5vw; */
   margin-top: 50px;
+  text-align: center;
 `;
 export default function Projects() {
   return (

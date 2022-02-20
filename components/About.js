@@ -24,11 +24,21 @@ const StyledButton = styled.button`
 
 const AboutGrid = styled.div`
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: 1fr min-content;
   gap: 6vw;
+  img {
+    border-radius: 50%;
+    align-self: center;
+    justify-self: start;
+    height: 140px;
+  }
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr;
+    img {
+      height: 80px;
+      align-self: start;
+      margin-top: 40px;
+    }
   }
 `;
 
@@ -44,17 +54,7 @@ export default function About() {
       }}
     >
       <AboutGrid>
-        <img
-          style={{
-            borderRadius: "50%",
-            alignSelf: "center",
-            justifySelf: "start",
-          }}
-          alt="shimon"
-          height="170px"
-          src="/shimon_compressed.jpg"
-        />
-        <div style={{ justifySelf: "center" }}>
+        <div>
           <h1>Hi, I'm Shimon</h1>
           <h3 style={{ marginTop: "15px" }}>
             Welcome to my web development portfolio
@@ -63,11 +63,12 @@ export default function About() {
             I specialise in CRUD web applications with responsive modern design,{" "}
             <br /> Working with the latest technologies and development tools.
           </p>
-          <Link href="#contact">
-            <StyledButton>Contact me</StyledButton>
-          </Link>
         </div>
+        <img alt="shimon" src="/shimon_compressed.jpg" />
       </AboutGrid>
+      <Link href="#contact">
+        <StyledButton>Contact me</StyledButton>
+      </Link>
     </div>
   );
 }

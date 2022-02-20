@@ -5,18 +5,18 @@ import Projects from "../components/Projects";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import HelpedBuilding from "../components/HelpedBuilding";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar title="Shimon Wosner" />
       <div
-        style={
-          {
-            // display: "grid",
-            // justifyContent: "center",
-          }
-        }
+        style={{
+          overflowX: "hidden",
+          // display: "grid",
+          // justifyContent: "center",
+        }}
       >
         <div
           style={{
@@ -36,11 +36,11 @@ export default function Home() {
         >
           <Skills />
         </div>
-        <div style={{ border: "4px solid white" }} />
+        {/* <div style={{ border: "4px solid red" }} /> */}
 
         <Projects />
-        <div style={{ border: "4px solid white" }} />
-
+        {/* <div style={{ border: "4px solid white" }} /> */}
+        <HelpedBuilding />
         <Contact />
       </div>
       <footer
@@ -90,6 +90,6 @@ export default function Home() {
           </a>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

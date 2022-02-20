@@ -9,31 +9,32 @@ const StyledList = styled.ul`
 
 const SectionSC = styled.section`
   background: #efefef;
-  width: 90vw;
+  width: 100vw;
 `;
 const ListsContainer = styled.div`
-  padding: 20px;
-  padding-left: 40px;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  /* justify-items: center; */
-  display: flex;
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 50px;
-  justify-content: center;
-  @media (max-width: 1070px) {
-    // flex-direction: column;
-    // gap: 50px;
-    display: block;
+  /* justify-content: center; */
+  @media (max-width: 509px) {
+    gap: 20px;
   }
 `;
 export default function Skills() {
   return (
     <SectionSC id="skills">
-      <div style={{ background: "#cfdfdf", padding: "1px" }}>
-        <h1 style={{ textAlign: "center", color: "teal" }}>
-          {"<Technical skills/>"}
-        </h1>
-      </div>
+      <h1
+        style={{
+          background: "#cfdfdf",
+          textAlign: "center",
+          color: "teal",
+          padding: "20px",
+          margin: 0,
+        }}
+      >
+        {"<Technical skills/>"}
+      </h1>
 
       <ListsContainer>
         <div>
