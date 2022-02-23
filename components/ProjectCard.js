@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectCard = styled.div`
   background: #efefef;
   width: 420px;
-  height: 350px;
+  min-height: 350px;
 
   h3 {
     text-align: center;
@@ -16,5 +16,5 @@ export const ProjectCard = styled.div`
 export const CardBody = styled.div`
   display: grid;
   align-items: center;
-  height: 302px;
+  min-height: 302px;
 `;

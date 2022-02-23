@@ -18,7 +18,17 @@ export default function ProjectDirshuAccess() {
               width={400}
             />
           </SRLWrapper>
-          <p style={{ margin: 0, marginTop: "10px" }}>MS Access / SQL / VBA</p>
+          <p>
+            Dirshu UK custom MS Access app for all their needs, (including
+            keeping track of all programs, tests, marks, and payments).
+          </p>
+          <p>
+            I took them from multiple Word and Excel sheets to a single desktop
+            application.
+          </p>
+          <p style={{ margin: 0, marginTop: "10px" }}>
+            Tech: MS Access / SQL / VBA
+          </p>
         </div>
       </CardBody>
     </ProjectCard>

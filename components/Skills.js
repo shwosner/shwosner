@@ -2,9 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledList = styled.ul`
-  margin-top: 5px;
   list-style-type: circle;
   padding-left: 26px;
+  line-height: 1.3;
+  h3 {
+    margin-left: -20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
 `;
 
 const SectionSC = styled.section`
@@ -37,86 +43,66 @@ export default function Skills() {
       </h1>
 
       <ListsContainer>
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
-            Back-end
-          </h3>
-          <StyledList>
-            <li>NodeJS</li>
-            <li>Express</li>
-            <li>REST API</li>
-            <li>GraphQL/Apollo</li>
-            <li>Mongoose</li>
-            <li>Prisma</li>
-            <li>Next</li>
-            <li>Nuxt</li>
-            <li>Vite</li>
-          </StyledList>
-        </div>
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
-            Front-end
-          </h3>
-          <StyledList>
-            <li>HTML, CSS, JS</li>
-            <li>React</li>
-            <li>Vue</li>
-            <li>Svelte</li>
-          </StyledList>
-        </div>
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
-            Databases
-          </h3>
-          <StyledList>
-            <li>MongoDB</li>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>Supabase</li>
-            <li>Firebase</li>
-          </StyledList>
-        </div>
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
-            Version control
-          </h3>
-          <StyledList>
-            <li>GitHub</li>
-            <li>GitLab</li>
-            <li>Bitbucket</li>
-          </StyledList>
-        </div>
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
-            Deployment
-          </h3>
-          <StyledList>
-            <li>Heroku</li>
-            <li>Vercel</li>
-            <li>Netlify</li>
-            <li>Some exp. in AWS GCP and Azure</li>
-          </StyledList>
-        </div>
-        {/* <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>APIs</h3>
-          <StyledList>
-            <li>Stripe</li>
-            <li>Slack</li>
-            <li>Postmark</li>
-            <li>Mailgun</li>
-            <li>Connectwise</li>
-            <li>And more...</li>
-          </StyledList>
-        </div> */}
-        <div>
-          <h3 style={{ marginBottom: 0, textTransform: "uppercase" }}>
-            Design
-          </h3>
-          <StyledList>
-            <li>Figma</li>
-            <li>UX/UI</li>
-          </StyledList>
-        </div>
+        <StyledList>
+          <h3>Back-end</h3>
+          <li>NodeJS</li>
+          <li>Express</li>
+          <li>REST API</li>
+          <li>GraphQL/Apollo</li>
+          <li>Mongoose</li>
+          <li>Prisma</li>
+          <li>Next</li>
+          <li>Nuxt</li>
+          <li>Vite</li>
+        </StyledList>
+        <StyledList>
+          <h3>Front-end</h3>
+          <li>HTML, CSS, JS</li>
+          <li>React</li>
+          <li>Vue</li>
+          <li>Svelte</li>
+        </StyledList>
+        <StyledList>
+          <h3>Databases</h3>
+          <li>MongoDB</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Supabase</li>
+          <li>Firebase</li>
+        </StyledList>
+        <StyledList>
+          <h3>Version control</h3>
+          <li>GitHub</li>
+          <li>GitLab</li>
+          <li>Bitbucket</li>
+        </StyledList>
+        <StyledList>
+          <h3>Deployment</h3>
+          <li>Heroku</li>
+          <li>Vercel</li>
+          <li>Netlify</li>
+          <li>Some exp. in AWS, GCP and Azure</li>
+        </StyledList>
+        {/* <StyledList>
+          <h3>APIs</h3>
+          <li>Slack</li>
+          <li>Stripe</li>
+          <li>Postmark</li>
+          <li>Mailgun</li>
+          <li>Connectwise</li>
+          <li>And more...</li>
+        </StyledList> */}
+        {/* <StyledList>
+          <h3>Design</h3>
+          <li>Figma</li>
+          <li>UX/UI</li>
+        </StyledList> */}
+        <StyledList>
+          <h3>Other</h3>
+          <li>External APIs</li>
+          <li>Figma</li>
+          <li>UX/UI</li>
+        </StyledList>
       </ListsContainer>
     </SectionSC>
   );

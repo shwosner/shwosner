@@ -19,11 +19,15 @@ export default function ProjectDirshuSiyum() {
               width={400}
             />
           </SRLWrapper>
-          <p style={{ margin: 0, marginTop: "10px" }}>
-            Node/Express, React, Stripe, Mailgun
+          <p style={{ margin: 0 }}>
+            Website to book and manage tickets to all Dirshu UK events.
           </p>
+          {/* <p style={{ margin: 0 }}>
+            Was already used for multiple events in 2020 and 2022.
+          </p> */}
+          <p style={{ margin: 0 }}>Node/Express, React, Stripe, Mailgun.</p>
           <div style={{ textAlign: "center", marginTop: "16px" }}>
-            <a href="https://dirshu-event.herokuapp.com/" target="_blank">
+            <a href="https://events.dirshu.co.uk" target="_blank">
               <FaEye /> Live app
             </a>
           </div>

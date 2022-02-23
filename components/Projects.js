@@ -38,9 +38,9 @@ export default function Projects() {
       <StyledHeading>{"<Projects />"}</StyledHeading>
       <ProjectsGrid>
         <ProjectRandomChat />
+        <ProjectDirshuSiyum />
         <ProjectExpressSSE />
         <ProjectDirshuAccess />
-        <ProjectDirshuSiyum />
       </ProjectsGrid>
     </section>
     // </SimpleReactLightbox>

@@ -19,17 +19,20 @@ export default function ProjectRandomChat() {
           />
         </SRLWrapper>
         <p style={{ margin: 0, marginTop: "10px" }}>
-          React, Vite (with{" "}
-          <a href="https://twitter.com/chakra_ui" target="_blank">
-            @chakra_ui
+          FrontEnd: React (with {""}
+          <a href="https://chakra-ui.com" target="_blank">
+            chakra-ui
           </a>
-          ) <br />
-          Data:{" "}
-          <a href="https://twitter.com/supabase_io" target="_blank">
-            @supabase_io
-          </a>{" "}
-          (On top of PostgreSQL)
+          ), Vite.
         </p>
+        <p style={{ margin: 0 }}>
+          Database: PostgreSQL (
+          <a href="https://supabase.com" target="_blank">
+            Supabase
+          </a>
+          )
+        </p>
+        <p style={{ margin: 0 }}>Host: Netlify</p>
         <div
           style={{
             display: "flex",

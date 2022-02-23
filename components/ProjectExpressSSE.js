@@ -13,17 +13,16 @@ export default function ProjectExpressSSE() {
           <ul>
             <li>
               Uses SSE (Server Sent Events) to respond to all clients anytime a
-              new message is sent, (without the user of SocketIO).
+              new message is sent, (without the use of SocketIO).
             </li>
 
             <li>
-              Uses latest version of Node with modern <b>import/export</b> (ES
-              modules).
+              Uses Node with modern <b>import/export</b> (ES modules) syntax.
             </li>
             <li>
               Uses{" "}
-              <a href="https://twitter.com/chakra_ui" target="_blank">
-                @chakra_ui
+              <a href="https://chakra-ui.com" target="_blank">
+                chakra-ui
               </a>{" "}
               for it's UI library.
             </li>
