@@ -49,7 +49,8 @@ const BoxContainer = styled.div`
 export default function HelpedBuilding() {
   return (
     <SectionCS>
-      <h1>{"<Helped building/>"}</h1>
+      {/* <h1>{"<Helped building/>"}</h1> */}
+      <h1>{"<Was a major contributor to/>"}</h1>
       <BoxContainer>
         {/* <Box>
           <h3>Compky</h3>
