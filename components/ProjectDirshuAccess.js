@@ -8,28 +8,26 @@ export default function ProjectDirshuAccess() {
     <ProjectCard>
       <h3>MS Access application</h3>
       <CardBody>
-        <div style={{ padding: "15px" }}>
-          <SRLWrapper>
-            <Image
-              className="project-image"
-              src="/dirshu-access.png"
-              alt="MS Access application"
-              height={200}
-              width={400}
-            />
-          </SRLWrapper>
-          <p>
-            Dirshu UK custom MS Access app for all their needs, (including
-            keeping track of all programs, tests, marks, and payments).
-          </p>
-          <p>
-            I took them from multiple Word and Excel sheets to a single desktop
-            application.
-          </p>
-          <p style={{ margin: 0, marginTop: "10px" }}>
-            Tech: MS Access / SQL / VBA
-          </p>
-        </div>
+        <SRLWrapper>
+          <Image
+            className="project-image"
+            src="/dirshu-access.png"
+            alt="MS Access application"
+            height={200}
+            width={400}
+          />
+        </SRLWrapper>
+        <p>
+          Dirshu UK custom MS Access app for all their needs, (including keeping
+          track of all programs, tests, marks, and payments).
+        </p>
+        <p>
+          I took them from multiple Word and Excel sheets to a single desktop
+          application.
+        </p>
+        <p style={{ margin: 0, marginTop: "10px" }}>
+          Tech: MS Access / SQL / VBA
+        </p>
       </CardBody>
     </ProjectCard>
   );
